@@ -1,6 +1,7 @@
 package com.atguigu.ggkt.vod.mapper;
 
-import com.atguigu.ggkt.vod.entity.Teacher;
+
+import com.atguigu.ggkt.model.vod.Teacher;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
