@@ -1,7 +1,9 @@
 package com.atguigu.ggkt.vod.service;
 
 
+import com.atguigu.ggkt.Result.Result;
 import com.atguigu.ggkt.model.vod.Teacher;
+import com.atguigu.ggkt.vo.vod.TeacherQueryVo;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -14,4 +16,5 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface TeacherService extends IService<Teacher> {
 
+    Result findPage(TeacherQueryVo teacherQueryVo, long current, long limit);
 }

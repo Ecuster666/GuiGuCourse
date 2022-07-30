@@ -41,8 +41,10 @@ public class Teacher extends BaseEntity {
 	private Integer sort;
 
 	@ApiModelProperty(value = "入驻时间")
-	@JsonFormat(pattern = "yyyy-MM-dd")
+	@JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd")
 	@TableField("join_date")
 	private Date joinDate;
+
+	
 
 }

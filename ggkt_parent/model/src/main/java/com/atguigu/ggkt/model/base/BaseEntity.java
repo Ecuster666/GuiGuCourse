@@ -29,7 +29,7 @@ public class BaseEntity implements Serializable {
     @ApiModelProperty(value = "更新时间")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     @TableField("update_time")
-    private Date updateTime;
+    private Date updateTime=new Date();
 
     @ApiModelProperty(value = "逻辑删除(1:已删除，0:未删除)")
     @JsonIgnore
